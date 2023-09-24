@@ -1,0 +1,219 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+/* google font link ends  */
+
+ /* common css starts  */
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+:root{
+    --primaryfont:'Abril Fatface', cursive;
+    --secondaryfont: 'Open Sans', sans-serif;
+    --thirdfont: 'Ubuntu', sans-serif;
+    --primarycolor:#0f2f44;
+    --secondarycolor:#ffc712;
+    --thirdcolor:#8484bf;
+}
+li,ol{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+    .align{
+    align-items: center;
+   }
+.container{
+    width:80% ;
+    margin: auto;
+}
+.btn{
+  font-size: 20px;
+  font-family: var(--thirdfont);
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  background-color: var(--thirdcolor);
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  cursor: ponter;
+  border-radius: 10px;
+}
+
+/* common css ends  */
+
+
+ /* head design starts  */
+   .head{
+    text-align: center;
+    background-color: var(--primarycolor);
+    color: white;
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    padding: 18px 0;
+    text-transform: capitalize;
+   }
+
+   .head .row{
+    justify-content: space-between;
+   }
+ /* head design ends  */
+
+ /* todo navver  design starts  */
+ nav{
+    background-color: #ffffff;
+ }
+   nav .row{
+    justify-content: space-between;
+   }
+   .nav_list ul li{
+    display: inline-block;
+    padding: 40px 19px;
+ position: relative;
+   }
+   .nav_list ul li a{
+    font-size: 16px;
+    font-family: var(--thirdfont);
+    font-weight: 500;
+    color: var(--primarycolor);
+    text-transform: capitalize;
+    transition: 0.25s;
+   }
+   .nav_list ul li > a:hover{
+    color: #ffc712;
+   }
+     .nav_list .icon{
+        border: 1px solid  #e0e0e0;
+        padding: 8px;
+        border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+     }
+
+   /*  sub menu design starts */
+    .nav_list .sub_menu{
+ width: 200px;
+ height: auto;
+ border-radius: 5px;
+ position: absolute;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ margin-top: 20px;
+ margin-left: -150px;
+ opacity: 0;
+ visibility: hidden;
+ transition: .5s;
+ font-style: italic;
+ z-index: 2;
+    }
+ 
+    .nav_list .sub_menu  li{
+        display: block;
+     padding: 20px 20px;
+     border-bottom: 1px solid #ddd;
+     position: relative;
+    }
+    .nav_list  li:hover .sub_menu{
+        opacity: 1;
+         visibility: visible;
+         margin-left: -0px;
+    }
+   .nav_list .sub_menu li a {
+        color: black;
+    }
+   /* sub menu design ends  */
+
+     /* sub menu 2 design starts  */
+       .nav_list .sub_menu .sub_menu_2{
+         position: absolute;
+         margin-left: 350px;
+         width: 200px;
+         height: auto;
+         border-radius: 5px;
+          opacity: 0;
+          visibility: hidden;
+          transition: .5s;
+          box-shadow: rgba(17, 12, 46, 0.295) 0px 48px 100px 0px;
+          font-style: italic;
+          z-index: 3;       }
+       /* .nav_list .sub_menu .sub_menu_2 li{
+        padding: 20px 20px;
+       } */
+       .nav_list .sub_menu li:hover .sub_menu_2{
+        opacity: 1;
+        visibility: visible;
+       margin-left: 200px;
+       } 
+     /* sub menu 2 design ends  */
+ /* todo navver design ends  */
+
+     /* ?banner section design starts  */
+
+          #banner{
+            background-image: url('../images/banner1.jpg');
+             width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+       
+             z-index: 1;
+          }
+          #banner .container{
+        
+            height: 100%;
+          }
+          #banner .container .row{
+            height: 100%;
+          }
+          #banner .banner__details{
+            width: 38%;
+  
+          }
+          .banner__details {
+  line-height: 50px;
+          }
+          .banner__details h1{
+        font-size: 68px;
+          font-family: var(--primaryfont);
+          text-transform: uppercase;
+          font-weight: 300;
+          }
+          .banner__details  h2{
+  font-size: 40px;
+  text-transform: capitalize;
+  font-family: var(--secondaryfont);
+  font-weight: 300;
+          }
+          .banner__details h3{
+        font-size: 32px;
+        font-family: var(--secondaryfont);
+        text-transform: capitalize;
+        letter-spacing: 17px;
+        color: var(--thirdcolor);
+          }
+          .banner__details p{
+          font-size: 14px;
+          text-transform: lowercase;
+          font-family: var(--secondaryfont);
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 30px 0;
+          }
+          .banner__details .icon__2{
+           background-color: white;
+            padding: 16px;
+            border-radius: 50%;
+            margin-left: 20px;
+            color: var(--thirdcolor);
+          }
+     /* ?banner section design ends  */
+
